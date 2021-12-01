@@ -1,0 +1,13 @@
+footer{
+    .upper{
+        img{
+            max-width: 150px;
+        }
+        a{
+            color: #444;
+            &:hover{
+                color: $p;
+            }   
+        }
+    }
+}
