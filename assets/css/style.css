@@ -199,6 +199,81 @@ h6 {
   color: #448EDB;
 }
 
+.messageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.messageBox .closeIcon {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.infoBox {
+  background-color: rgba(0, 200, 0, 0.06) !important;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-size: 14px;
+  color: darkgreen;
+  border-radius: 10px;
+}
+
+.problem {
+  background-color: rgba(255, 38, 0, 0.06) !important;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #c20505;
+  border-radius: 10px;
+}
+
+.shareIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-start;
+      -ms-flex-pack: space-start;
+          justify-content: space-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.shareIcon .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shareIcon i {
+  font-size: 24px;
+  color: #448EDB !important;
+}
+
+.shareIcon a {
+  color: #448EDB !important;
+  display: block;
+  color: #bbb !important;
+}
+
 .site_header {
   padding: 10px 0;
 }
@@ -741,9 +816,8 @@ footer .upper a:hover {
 }
 
 .single_page .hero {
-  background-image: none;
-  background-position: 140% 100%;
-  background-size: contain;
+  background-position: -30% 100% !important;
+  background-size: cover !important;
 }
 
 @media (max-width: 599px) {

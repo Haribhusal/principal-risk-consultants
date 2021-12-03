@@ -173,22 +173,18 @@
           </div>
         </div>
       </section>
-      <section class="consult">
+      <section class="consult py-5">
         <div class="container">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-5 d-flex align-items-center">
               <div class="titlearea text-center">
-                <strong class="text_dim subtitle">Dipendra Poudel</strong>
-                <div class="des">
-                  <small class="text-muted">Sr. Consult Guy</small>
-                </div>
-                <img src="assets/img/consult.png" class="img-fluid" alt="" />
+                <img src="assets/img/consult.svg" class="img-fluid" alt="" />
               </div>
             </div>
             <div class="col-sm-7">
               <div class="formwrapper">
                 <div class="titlearea">
-                  <h3 class="title">Consult With Us</h3>
+                  <h3 class="title">Send us your query</h3>
                   <form action="" class="consultForm mt-3">
                     <div class="row">
                       <div class="col-sm-6">
@@ -271,10 +267,27 @@
                           "
                         >
                           <button href="#" class="btn btn_p btn_icon">
-                            Consult Now
+                            Submit
                             <i class="las la-arrow-right"></i>
                           </button>
-                          <!-- <button type="submit" class="btn btn_p">Submit </button> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="messageBox infoBox">
+                          <div class="closeIcon">
+                            <i class="las la-times"></i>
+                          </div>
+                          Your message has been sent successfully, We will be
+                          contacting you soon...
+                        </div>
+                        <div class="messageBox infoBox problem">
+                          <div class="closeIcon">
+                            <i class="las la-times"></i>
+                          </div>
+                          There's a problem while sending your message, please
+                          try again later...
                         </div>
                       </div>
                     </div>
@@ -424,12 +437,13 @@
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
+        const uluru = { lat: 27.695204, lng: 85.340307 };
         // The map, centered at Uluru
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
+          zoom: 16,
           center: uluru,
         });
+
         // The marker, positioned at Uluru
         const marker = new google.maps.Marker({
           position: uluru,
@@ -438,6 +452,13 @@
       }
     </script>
 
+    <script>
+      $(document).ready(function () {
+        $(".closeIcon").click(function () {
+          $(this).parent().fadeOut();
+        });
+      });
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSQ78cvo4JDlSdr4UxhUaWzpCJQAlSjxA&callback=initMap&libraries=&v=weekly"
       async

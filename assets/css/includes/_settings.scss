@@ -166,3 +166,57 @@ h6 {
 .text_p {
   color: $p;
 }
+
+.messageBox {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  .closeIcon {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 100px;
+  }
+}
+.infoBox {
+  background-color: rgba(0, 200, 0, 0.06) !important;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-size: 14px;
+  color: rgba(0, 100, 0, 1);
+  border-radius: 10px;
+}
+
+.problem {
+  background-color: rgba(255, 38, 0, 0.06) !important;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-size: 14px;
+  color: rgb(194, 5, 5);
+  border-radius: 10px;
+}
+
+.shareIcon {
+  display: flex;
+  justify-content: space-start;
+  align-items: center;
+  margin-top: 20px;
+  .subtitle {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  i {
+    font-size: 24px;
+    color: $p !important;
+  }
+  a {
+    color: $p !important;
+    display: block;
+    color: #bbb !important;
+  }
+}
