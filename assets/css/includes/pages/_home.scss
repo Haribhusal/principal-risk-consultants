@@ -4,13 +4,13 @@
   background-position: 110% 100%;
   background-repeat: no-repeat;
   position: relative;
-  @include phone{
-      background-image: none !important;
+  @include phone {
+    background-image: none !important;
   }
-  .hero_content{
-      @include phone{
-          margin-top: 30px;
-      }
+  .hero_content {
+    @include phone {
+      margin-top: 30px;
+    }
   }
   .scroll {
     position: absolute;
@@ -21,8 +21,8 @@
     font-weight: 700;
     text-transform: uppercase;
     transform: rotate(-90deg);
-    @include phone{
-        display: none;
+    @include phone {
+      display: none;
     }
     &::after {
       position: absolute;
@@ -35,10 +35,13 @@
       background-color: #eee;
     }
   }
- 
+
   .hero_image {
     img {
       max-width: 80%;
+      @include phone{
+        max-width: 100%;
+      }
     }
   }
 }
@@ -98,13 +101,13 @@
 }
 .cat {
   padding: 100px 0;
-  @include phone{
-      padding: 50px 0;
+  @include phone {
+    padding: 50px 0;
   }
   .cat_item {
     overflow: hidden;
-    @include phone{
-        margin-bottom: 15px;
+    @include phone {
+      margin-bottom: 15px;
     }
     &:hover {
       .action {
@@ -120,6 +123,9 @@
       padding-left: 30px;
       opacity: 0;
       left: -30px;
+      @include phone {
+        opacity: 1 !important;
+      }
 
       transition: all 0.3s ease;
     }
@@ -141,6 +147,7 @@
       img {
         position: relative;
         height: 50px;
+        width: auto;
       }
     }
     padding: 0px;
@@ -170,34 +177,39 @@
   }
 }
 
-
-.consult{
-    .container{
-        background-color: #f8f8f8;
-        padding: 30px;
-        border-radius: 10px;
-        padding-bottom: 0px;
-        .form-group{
-            margin-bottom: 10px;
-        }   
-        .form-control{
-            background-color: #eee;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 10px;
-            height: auto !important;
-            margin: 7px 0;
-            &:focus{
-                outline: none;
-                box-shadow: none;
-                box-shadow: none;
-                background-color: #fff;
-            }
-
-
-        }
+.consult {
+  .container {
+    .titlearea {
+      h3 {
+        margin-top: 30px;
+      }
     }
-    img{
-        max-height: 400px;
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    .form-group {
+      margin-bottom: 10px;
     }
+    .form-control {
+      background-color: #eee;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      height: auto !important;
+      margin: 7px 0;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        box-shadow: none;
+        background-color: #fff;
+      }
+    }
+  }
+  img {
+    max-height: 400px;
+    @include phone {
+      max-height: 200px;
+    }
+  }
 }

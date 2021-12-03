@@ -17,10 +17,16 @@ ul {
 body {
   color: #000;
   font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
 }
 
 .text_dim {
@@ -53,8 +59,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #448EDB;
 }
 
-.btn_p::before {
-  content: '';
+.btn_icon {
+  letter-spacing: 0px;
+  font-weight: 700;
+  padding: 8px 20px;
+  position: relative;
+}
+
+.btn_icon::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -66,13 +79,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.btn_icon {
-  letter-spacing: 0px;
-  font-weight: 700;
-  padding: 8px 20px;
-  position: relative;
 }
 
 .btn_icon i {
@@ -105,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 599px) {
   .owl-carousel .owl-prev {
-    left: 0px !important;
+    left: -7px !important;
     height: 30px !important;
     width: 30px !important;
     font-size: 16px !important;
@@ -130,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 599px) {
   .owl-carousel .owl-next {
-    right: 0px !important;
+    right: -7px !important;
     height: 30px !important;
     width: 30px !important;
     font-size: 16px !important;
@@ -190,6 +196,19 @@ h1, h2, h3, h4, h5, h6 {
           animation: fadeInRight 0.5s ease;
 }
 
+@media (max-width: 599px) {
+  .site_header .menu_list_wrapper {
+    -webkit-animation: fadeInUp 0.5s ease;
+            animation: fadeInUp 0.5s ease;
+  }
+}
+
+.site_header .menu_list_wrapper .logo {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
 .site_header .menu_list_wrapper .close {
   position: absolute;
   top: 0;
@@ -234,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site_header .menu_list_wrapper .menu_list ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -265,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-transform: uppercase;
   -webkit-column-gap: 15px;
           column-gap: 15px;
   -webkit-box-align: center;
@@ -332,12 +352,44 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media (max-width: 599px) {
+  footer .upper .logoarea img {
+    margin-bottom: 30px;
+  }
+}
+
 footer .upper img {
   max-width: 150px;
 }
 
 footer .upper a {
-  color: #444;
+  color: #6c757d;
 }
 
 footer .upper a:hover {
@@ -396,6 +448,12 @@ footer .upper a:hover {
 
 .hero .hero_image img {
   max-width: 80%;
+}
+
+@media (max-width: 599px) {
+  .hero .hero_image img {
+    max-width: 100%;
+  }
 }
 
 .services {
@@ -505,6 +563,12 @@ footer .upper a:hover {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 599px) {
+  .cat .cat_item .action {
+    opacity: 1 !important;
+  }
+}
+
 .cat .cat_item figure {
   padding: 30px;
   margin-bottom: 0;
@@ -526,6 +590,7 @@ footer .upper a:hover {
 .cat .cat_item figure img {
   position: relative;
   height: 50px;
+  width: auto;
 }
 
 .cat .cat_item .title {
@@ -554,6 +619,10 @@ footer .upper a:hover {
   padding-bottom: 0px;
 }
 
+.consult .container .titlearea h3 {
+  margin-top: 30px;
+}
+
 .consult .container .form-group {
   margin-bottom: 10px;
 }
@@ -577,5 +646,24 @@ footer .upper a:hover {
 
 .consult img {
   max-height: 400px;
+}
+
+@media (max-width: 599px) {
+  .consult img {
+    max-height: 200px;
+  }
+}
+
+.consultants .service_item {
+  text-align: center;
+}
+
+.consultants .service_item figure img {
+  height: 100px;
+  width: 100px !important;
+  margin: 0 auto;
+  border-radius: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
