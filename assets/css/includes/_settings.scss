@@ -39,10 +39,16 @@ h6 {
   position: relative;
   border: none;
   transition: all 0.3s ease-in-out;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
 
   &:hover {
     color: #fff;
     padding-left: 25px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2) !important;
 
     &::before {
       background-color: $p;
@@ -132,4 +138,31 @@ h6 {
 
 .bg_gray {
   background-color: #fff;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+::selection {
+  background-color: $p;
+  color: #fff;
+}
+
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-default {
+  border-radius: 100px;
+  &:hover {
+    background-color: #eee;
+  }
+}
+.text_p {
+  color: $p;
 }
