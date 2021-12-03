@@ -20,3 +20,9 @@
     background-size: contain;
   }
 }
+
+.text {
+  @include phone {
+    padding: 30px 0;
+  }
+}

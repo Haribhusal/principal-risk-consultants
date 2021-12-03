@@ -39,7 +39,7 @@
   .hero_image {
     img {
       max-width: 80%;
-      @include phone{
+      @include phone {
         max-width: 100%;
       }
     }
@@ -179,20 +179,20 @@
 
 .consult {
   .container {
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 0px;
     .titlearea {
       h3 {
         margin-top: 30px;
       }
     }
-    background-color: #f8f8f8;
-    padding: 30px;
-    border-radius: 10px;
-    padding-bottom: 0px;
     .form-group {
       margin-bottom: 10px;
     }
     .form-control {
-      background-color: #eee;
+      background-color: #fff;
       border: none;
       padding: 10px 20px;
       border-radius: 10px;
