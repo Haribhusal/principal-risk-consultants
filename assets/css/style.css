@@ -687,7 +687,9 @@ footer .upper a:hover {
 }
 
 .single_page .hero {
-  background-image: none !important;
+  background-image: none;
+  background-position: 140% 100%;
+  background-size: contain;
 }
 
 .listing {

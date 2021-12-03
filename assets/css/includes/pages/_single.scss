@@ -15,6 +15,8 @@
 .single_page {
   background-color: #eee;
   .hero {
-    background-image: none !important;
+    background-image: none;
+    background-position: 140% 100%;
+    background-size: contain;
   }
 }
