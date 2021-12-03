@@ -143,6 +143,21 @@ h6 {
   }
 }
 
+.gap {
+  gap: 10px;
+}
+
+#map {
+  height: 300px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.bg_gray {
+  background-color: #fff;
+}
+
 .site_header {
   padding: 10px 0;
 }
@@ -665,5 +680,53 @@ footer .upper a:hover {
   border-radius: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.single_page {
+  background-color: #eee;
+}
+
+.single_page .hero {
+  background-image: none !important;
+}
+
+.listing {
+  padding: 60px 0;
+  background-color: #eee;
+}
+
+.listing .list_item {
+  margin-bottom: 30px;
+}
+
+.listing .list_item article {
+  margin-top: 30px;
+}
+
+.listing .list_item article .meta {
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.listing .list_item article .meta div {
+  background-color: rgba(68, 142, 219, 0.1);
+  border-radius: 100px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.listing .list_item figure img {
+  border-radius: 10px;
+}
+
+.contactInfo {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

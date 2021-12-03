@@ -1,0 +1,25 @@
+.listing {
+  padding: 60px 0;
+  background-color: #eee;
+  .list_item {
+    margin-bottom: 30px;
+    article {
+      margin-top: 30px;
+      .meta {
+        column-gap: 10px;
+        margin-bottom: 10px;
+        div {
+          background-color: rgba($p, 0.1);
+          border-radius: 100px;
+          font-size: 12px;
+          padding: 5px 10px;
+        }
+      }
+    }
+    figure {
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+}
